@@ -31,8 +31,14 @@ export class CustomersController {
         }
     }
 
+    @Get('')
+    getCustomers(){
+        return this.customersService.getCustomers
+    }
+
     @Post('create')
     createCustomer(@Body() createCustomerDto: createCustomerDto){
         console.log(createCustomerDto)
+        this.customersService.createCustomer(createCustomerDto)
     }
 }
