@@ -27,7 +27,7 @@ export class CustomersService {
     }
 
     getCustomers(){
-        return this.customers
+        return this.customers;
     }
 
     createCustomer(createCustomer: createCustomerDto){

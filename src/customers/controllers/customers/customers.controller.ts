@@ -32,8 +32,8 @@ export class CustomersController {
     }
 
     @Get('')
-    getCustomers(){
-        return this.customersService.getCustomers
+    getAllCustomers(){
+        return this.customersService.getCustomers();
     }
 
     @Post('create')
